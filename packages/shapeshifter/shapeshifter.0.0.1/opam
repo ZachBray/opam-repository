@@ -1,0 +1,39 @@
+opam-version: "2.0"
+synopsis: "A low-level library for working with data in buffers"
+maintainer: ["zachbray+opam@gmail.com"]
+authors: ["Zachary Bray"]
+license: "ISC"
+homepage: "https://github.com/ZachBray/shapeshifter"
+bug-reports: "https://github.com/ZachBray/shapeshifter/issues"
+depends: [
+  "dune" {>= "2.9"}
+  "ppx_jane" {with-test}
+  "core_bench" {with-test}
+  "odoc" {with-doc}
+]
+build: [
+  ["dune" "subst"] {dev}
+  [
+    "dune"
+    "build"
+    "-p"
+    name
+    "-j"
+    jobs
+    "--promote-install-files=false"
+    "@install"
+    "@runtest" {with-test}
+    "@doc" {with-doc}
+  ]
+  ["dune" "install" "-p" name "--create-install-files" name]
+]
+dev-repo: "git+https://github.com/ZachBray/shapeshifter.git"
+url {
+  src:
+    "https://github.com/ZachBray/shapeshifter/releases/download/0.0.1/shapeshifter-0.0.1.tbz"
+  checksum: [
+    "sha256=2adf30d804460935a00465edfceba113dbbbe0acbc58aeab1775c6f02570db80"
+    "sha512=ed5a52724b5fef6f591d9cf28414acb637fe28661f8628b8e5435f4cdc8b85b95fe31500d17f3f0102d9fad669639f44877d59ef60197c8db0b85f103e9af067"
+  ]
+}
+x-commit-hash: "431851598c2f3fc1273c6044ba47977ca21671ae"
