@@ -32,8 +32,8 @@ url {
   src:
     "https://github.com/ZachBray/shapeshifter/releases/download/0.0.1/shapeshifter-0.0.1.tbz"
   checksum: [
-    "sha256=2adf30d804460935a00465edfceba113dbbbe0acbc58aeab1775c6f02570db80"
-    "sha512=ed5a52724b5fef6f591d9cf28414acb637fe28661f8628b8e5435f4cdc8b85b95fe31500d17f3f0102d9fad669639f44877d59ef60197c8db0b85f103e9af067"
+    "sha256=901e48a87939caa8220f9cf46761735a491a4212e356fc9066f0d11ee9e48b78"
+    "sha512=ad47c3bebb52ad2702c6cedbb9872a6b51d197be2f39addd598b986b36ccd085e4921953726abc93b530ceca816f2736583fe5ad8a8bbe91bff2a235bd9f428e"
   ]
 }
-x-commit-hash: "431851598c2f3fc1273c6044ba47977ca21671ae"
+x-commit-hash: "6d9800e629703c0e880929ac182e8da432759e18"
